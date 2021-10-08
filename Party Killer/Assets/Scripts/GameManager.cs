@@ -11,18 +11,15 @@ public class GameManager : MonoBehaviour
 	public static GameManager Instance;
 
 	public static int playerAScore = 0;
-	public static int playerBScore = 0;
 
 	public PlayerInputManager inputManager;
 
 	public GameObject playerA;
-	public GameObject playerB;
 
 	public GameObject playerPrefabA;
-	public GameObject playerPrefabB;
 
 	public Transform spawnPointA;
-	public Transform spawnPointB;
+
 	public GameObject players;
 	public GameObject playerDeathPrefab;
 
@@ -47,7 +44,6 @@ public class GameManager : MonoBehaviour
 	void OnPlayerJoined(PlayerInput input)
 	{
 		playerA = input.gameObject;
-		inputManager.playerPrefab = playerPrefabB;
 		playerA.transform.position = spawnPointA.position;
 		inputManager.DisableJoining();
 		waitingForPlayers = false;
@@ -59,20 +55,8 @@ public class GameManager : MonoBehaviour
 		if (playerA == null)
 		{
 			playerA = input.gameObject;
-			inputManager.playerPrefab = playerPrefabB;
 
 			playerA.transform.position = spawnPointA.position;
-		} else
-		{
-			playerB = input.gameObject;
-
-			playerB.transform.position = spawnPointB.position;
-
-			inputManager.DisableJoining();
-			waitingForPlayers = false;
-			waitingForPlayersUI.SetTrigger("Stop");
-
-			AudioManager.instance.Play("Ready");
 		}
 		
 	}
@@ -87,12 +71,9 @@ public class GameManager : MonoBehaviour
 
 		if (p == playerA)
 		{
-			//Debug.Log("THE POLICE KILLED THE PARTY!");
 			policeWon = true;
-			playerBScore++;
 		} else
 		{
-			//Debug.Log("THE PARTY STAYS ALIVE!");
 			policeWon = false;
 			playerAScore++;
 		}
@@ -121,7 +102,6 @@ public class GameManager : MonoBehaviour
 		yield return 0;
 
 		spawnPointA = GameObject.FindGameObjectWithTag("SpawnPointA").transform;
-		spawnPointB = GameObject.FindGameObjectWithTag("SpawnPointB").transform;
 	}
 
 	IEnumerator LoadNextLevel()
@@ -167,19 +147,14 @@ public class GameManager : MonoBehaviour
 		waitingForPlayers = true;
 
 		playerA.GetComponent<Rigidbody>().velocity = Vector3.zero;
-		playerB.GetComponent<Rigidbody>().velocity = Vector3.zero;
 
 		spawnPointA = GameObject.FindGameObjectWithTag("SpawnPointA").transform;
-		spawnPointB = GameObject.FindGameObjectWithTag("SpawnPointB").transform;
 
 		playerA.transform.position = spawnPointA.position;
-		playerB.transform.position = spawnPointB.position;
 
 		playerA.SetActive(true);
-		playerB.SetActive(true);
 
 		playerA.GetComponent<PlayerWeapon>().Reset();
-		playerB.GetComponent<PlayerWeapon>().Reset();
 
 		fader.SetTrigger("FadeIn");
 
@@ -212,7 +187,6 @@ public class GameManager : MonoBehaviour
 			playerA.GetComponent<Rigidbody>().velocity = Vector3.zero;
 
 			spawnPointA = GameObject.FindGameObjectWithTag("SpawnPointA").transform;
-			spawnPointB = GameObject.FindGameObjectWithTag("SpawnPointB").transform;
 
 			playerA.transform.position = spawnPointA.position;
 
@@ -225,8 +199,8 @@ public class GameManager : MonoBehaviour
 		IEnumerator enumerator = spwanPlayers();
 		StartCoroutine(enumerator);
 	}
-	IEnumerator spwanPlayers()
 
+	IEnumerator spwanPlayers()
     {
 		yield return new WaitForSeconds(1);
 		players.SetActive(true);

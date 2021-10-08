@@ -21,8 +21,8 @@ public class ScoreUI : MonoBehaviour
     {
 		if (isPlayerA)
 			text.text = GameManager.playerAScore.ToString();
-		else
-			text.text = GameManager.playerBScore.ToString();
+		/*else
+			text.text = GameManager.playerBScore.ToString();*/
 
 	}
 }
