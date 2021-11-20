@@ -14,6 +14,7 @@ public class Riser : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
+		if(Application.platform.Equals(RuntimePlatform.Android) || Application.platform.Equals(RuntimePlatform.IPhonePlayer)) return;
 		float perlin = Mathf.PerlinNoise(transform.position.x / 5f + Time.time * 1f, transform.position.z / 5f + Time.time * 1f);
 		transform.localScale = new Vector3(transform.localScale.x, perlin * 3.5f + 1f, transform.localScale.z);
     }

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using EZCameraShake;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class GameManager : MonoBehaviour
 
 	public GameObject players;
 	public GameObject playerDeathPrefab;
+	
+	public GameObject GameEndUI;
 
 	public bool waitingForPlayers = true;
 	public Animator waitingForPlayersUI;
@@ -38,27 +41,40 @@ public class GameManager : MonoBehaviour
 	private void Awake()
 	{
 		Instance = this;
+		currentLevel = MainMenu.levelToLoad;
 		StartCoroutine(LoadFirstLevel());
+		Application.targetFrameRate = 120;
 	}
+    public void StartLevel()
+    {
+		StartCoroutine(LoadFirstLevel());
 
-	void OnPlayerJoined(PlayerInput input)
+	}
+	void OnPlayerJoined()
 	{
-		playerA = input.gameObject;
+		//playerA = input.gameObject;
+		spawnPointA = GameObject.FindGameObjectWithTag("SpawnPointA").transform;
 		playerA.transform.position = spawnPointA.position;
-		inputManager.DisableJoining();
-		waitingForPlayers = false;
-		waitingForPlayersUI.SetTrigger("Stop");
+	
 		AudioManager.instance.Play("Ready");
 		if (!inputManager.joiningEnabled)
 			return;
 
 		if (playerA == null)
 		{
-			playerA = input.gameObject;
+			//playerA = input.gameObject;
 
 			playerA.transform.position = spawnPointA.position;
 		}
 		
+	}
+
+	public void GameEnded(int score)
+    {
+		GameEndUI.SetActive(true);
+		GameEndUI.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = $"HIGHEST SCORE: {score}";
+		gameIsEnded = true;
+		playerA.SetActive(false);
 	}
 
 	public void KillPlayer(GameObject p)
@@ -89,17 +105,18 @@ public class GameManager : MonoBehaviour
 
 	IEnumerator LoadFirstLevel()
 	{
-		if (LOADLEVEL == -1)
+		/*if (LOADLEVEL == -1)
 		{
 			currentLevel = GetRandomLevelIndex();
 		} else
 		{
 			currentLevel = LOADLEVEL;
-		}
+		}*/
 		
 		SceneManager.LoadScene(currentLevel, LoadSceneMode.Additive);
 
 		yield return 0;
+
 
 		spawnPointA = GameObject.FindGameObjectWithTag("SpawnPointA").transform;
 	}
@@ -177,6 +194,11 @@ public class GameManager : MonoBehaviour
 		return random;
 	}
 
+    private void Start()
+    {
+		OnPlayerJoined();
+
+	}
     private void Update()
     {
 		if (Input.GetKeyDown(KeyCode.R))
@@ -193,17 +215,22 @@ public class GameManager : MonoBehaviour
 			playerA.SetActive(true);
 
 			playerA.GetComponent<PlayerWeapon>().Reset();
+			playerA.GetComponent<PlayerController>().Restart();
 
 			fader.SetTrigger("FadeIn");
+			GameEndUI.SetActive(false);
+			gameIsEnded = false;
 		}
 		IEnumerator enumerator = spwanPlayers();
 		StartCoroutine(enumerator);
 	}
-
+	
 	IEnumerator spwanPlayers()
     {
 		yield return new WaitForSeconds(1);
 		players.SetActive(true);
-
+		inputManager.DisableJoining();
+		waitingForPlayers = false;
+		waitingForPlayersUI.SetTrigger("Stop");
 	}
 }

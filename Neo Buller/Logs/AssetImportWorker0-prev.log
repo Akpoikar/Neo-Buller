@@ -1,0 +1,374 @@
+Using pre-set license
+Built from '2020.2/staging' branch; Version is '2020.2.3f1 (8ff31bc5bf5b) revision 9433883'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Education; OS build 19043.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 24493 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+G:\Unity\IDE\2020.2.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+G:/Unity/UniGames/New/Neo Buller
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49772
+Successfully changed project path to: G:/Unity/UniGames/New/Neo Buller
+G:/Unity/UniGames/New/Neo Buller
+Using Asset Import Pipeline V2.
+Unable to join player connection multicast group.
+
+Refreshing native plugins compatible for Editor in 91.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
+[Subsystems] Discovering subsystems at path G:/Unity/IDE/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path G:/Unity/UniGames/New/Neo Buller/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Vendor:   
+    VRAM:     1979 MB
+    Driver:   30.0.14.9676
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'G:/Unity/IDE/2020.2.3f1/Editor/Data/Managed'
+Mono path[1] = 'G:/Unity/IDE/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'G:/Unity/IDE/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56868
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: G:/Unity/IDE/2020.2.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: G:/Unity/IDE/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001493 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 79.09 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.521 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001319 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 77.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.385 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.0 MB.
+System memory in use after: 130.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3167.
+Total: 6.715200 ms (FindLiveObjects: 1.036700 ms CreateObjectMapping: 1.109700 ms MarkObjects: 4.459600 ms  DeleteObjects: 0.107200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Sprites/Buttons/play_passive.png
+  artifactKey: Guid(19f9072a74b9709478848c2258d3225c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/play_passive.png using Guid(19f9072a74b9709478848c2258d3225c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2c69345152f8b26c015909c2289e2f') in 0.174698 seconds
+  Import took 0.181226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Sprites/Buttons/play_hover.png
+  artifactKey: Guid(68a1aa0e92b58c94ebee0362373d4e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/play_hover.png using Guid(68a1aa0e92b58c94ebee0362373d4e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505f71b3523f9cad2b8deb91b4d4e1fd') in 0.014300 seconds
+  Import took 0.020024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Sprites/Buttons/quit_passive.png
+  artifactKey: Guid(c4f69f964a22dd84fac74dadedcdcbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/quit_passive.png using Guid(c4f69f964a22dd84fac74dadedcdcbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acebb0c6c3625992b7109c506b0ed29d') in 0.018843 seconds
+  Import took 0.031141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Sprites/Buttons/settings_hover.png
+  artifactKey: Guid(4cc7074c123c46c42813d642d3f18c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/settings_hover.png using Guid(4cc7074c123c46c42813d642d3f18c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04f01fbc37398b15fba2daf36d50219d') in 0.023862 seconds
+  Import took 0.032883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Sprites/Buttons/settings_active.png
+  artifactKey: Guid(dddb29ce909dd8643a91f23d84491cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/settings_active.png using Guid(dddb29ce909dd8643a91f23d84491cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '853bb59be53fa7bec1dfa2ae34bb0520') in 0.017412 seconds
+  Import took 0.023706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Sprites/Buttons/continue_passive.png
+  artifactKey: Guid(b17f9f7ca91f53447b43292f22a8dd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/continue_passive.png using Guid(b17f9f7ca91f53447b43292f22a8dd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bfca7c546c22f5d3f720569694e212b') in 0.016322 seconds
+  Import took 0.024357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Sprites/Buttons/continue_active.png
+  artifactKey: Guid(20470e371254e4b4599ad318d747343a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/continue_active.png using Guid(20470e371254e4b4599ad318d747343a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aff996b6f96a0a9b818a1c603a4bfd1') in 0.013290 seconds
+  Import took 0.019478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000472 seconds.
+  path: Assets/Sprites/Buttons/continue_hover.png
+  artifactKey: Guid(4f7c5c974f134e840b475ca06e5c8965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/continue_hover.png using Guid(4f7c5c974f134e840b475ca06e5c8965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '691efb90852c9b5b6bc1e1e027300c64') in 0.014223 seconds
+  Import took 0.024210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Sprites/Buttons/quit_hover.png
+  artifactKey: Guid(7b0d7919118f86144a4ce0e00f5b94d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/quit_hover.png using Guid(7b0d7919118f86144a4ce0e00f5b94d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32da954d9fe56351c52835b9305f7e25') in 0.016115 seconds
+  Import took 0.022988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Sprites/Buttons/quit_active.png
+  artifactKey: Guid(913995156e439a14cb1622c32739ef55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/quit_active.png using Guid(913995156e439a14cb1622c32739ef55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a95534221b2842ec89ff5a41aae80e7') in 0.016756 seconds
+  Import took 0.025119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Sprites/Buttons/play_active.png
+  artifactKey: Guid(cfbc483d670246a4b81f123c1ee038f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/play_active.png using Guid(cfbc483d670246a4b81f123c1ee038f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e55055f29bf08c0bfedff556b3f54ef9') in 0.011099 seconds
+  Import took 0.016263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Sprites/Buttons/settings_passive.png
+  artifactKey: Guid(56f009256526c5b43b664db66450ca9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/settings_passive.png using Guid(56f009256526c5b43b664db66450ca9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0ebf5f8303e1e92382d182e8f96bc3e') in 0.013835 seconds
+  Import took 0.019119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.579569 seconds.
+  path: Assets/Sprites/Buttons/continue_active.png
+  artifactKey: Guid(20470e371254e4b4599ad318d747343a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/continue_active.png using Guid(20470e371254e4b4599ad318d747343a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17aeb2b69a31241fdd513308f54633da') in 0.073729 seconds
+  Import took 0.081551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Sprites/Buttons/play_passive.png
+  artifactKey: Guid(19f9072a74b9709478848c2258d3225c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/play_passive.png using Guid(19f9072a74b9709478848c2258d3225c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25268862622a5f7441815552d9989d65') in 0.016344 seconds
+  Import took 0.023170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/Sprites/Buttons/play_hover.png
+  artifactKey: Guid(68a1aa0e92b58c94ebee0362373d4e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/play_hover.png using Guid(68a1aa0e92b58c94ebee0362373d4e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e02a92e201bcef7bc897a58ec15b772') in 0.020012 seconds
+  Import took 0.027348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000587 seconds.
+  path: Assets/Sprites/Buttons/quit_passive.png
+  artifactKey: Guid(c4f69f964a22dd84fac74dadedcdcbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/quit_passive.png using Guid(c4f69f964a22dd84fac74dadedcdcbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bf423a8e65cef33671172de1369ae47') in 0.020268 seconds
+  Import took 0.027683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/Sprites/Buttons/settings_hover.png
+  artifactKey: Guid(4cc7074c123c46c42813d642d3f18c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/settings_hover.png using Guid(4cc7074c123c46c42813d642d3f18c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab415798af5f80d0cae63e84ab57482b') in 0.019643 seconds
+  Import took 0.027816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Sprites/Buttons/settings_active.png
+  artifactKey: Guid(dddb29ce909dd8643a91f23d84491cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/settings_active.png using Guid(dddb29ce909dd8643a91f23d84491cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77951b9b606d77d81d831352bb304b21') in 0.017751 seconds
+  Import took 0.027618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000417 seconds.
+  path: Assets/Sprites/Buttons/continue_passive.png
+  artifactKey: Guid(b17f9f7ca91f53447b43292f22a8dd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/continue_passive.png using Guid(b17f9f7ca91f53447b43292f22a8dd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45e22e61f119f27780fbd5d931f1f7e6') in 0.019056 seconds
+  Import took 0.028189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000574 seconds.
+  path: Assets/Sprites/Buttons/continue_hover.png
+  artifactKey: Guid(4f7c5c974f134e840b475ca06e5c8965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/continue_hover.png using Guid(4f7c5c974f134e840b475ca06e5c8965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '285afd71d9e7d439007ab7b7c09e0633') in 0.020888 seconds
+  Import took 0.030676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000505 seconds.
+  path: Assets/Sprites/Buttons/quit_hover.png
+  artifactKey: Guid(7b0d7919118f86144a4ce0e00f5b94d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/quit_hover.png using Guid(7b0d7919118f86144a4ce0e00f5b94d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34b500bb6b3843bf2622a128bfa64b48') in 0.017521 seconds
+  Import took 0.026622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Sprites/Buttons/quit_active.png
+  artifactKey: Guid(913995156e439a14cb1622c32739ef55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/quit_active.png using Guid(913995156e439a14cb1622c32739ef55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a758836edd2a3c906a084382198682') in 0.019119 seconds
+  Import took 0.025025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Sprites/Buttons/play_active.png
+  artifactKey: Guid(cfbc483d670246a4b81f123c1ee038f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/play_active.png using Guid(cfbc483d670246a4b81f123c1ee038f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4542d8523ebb46713614421aed40c2d6') in 0.019595 seconds
+  Import took 0.026804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Sprites/Buttons/settings_passive.png
+  artifactKey: Guid(56f009256526c5b43b664db66450ca9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Buttons/settings_passive.png using Guid(56f009256526c5b43b664db66450ca9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c8f16c3e3141b480b722b724bc35984') in 0.015324 seconds
+  Import took 0.023388 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001348 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.461 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.3 MB.
+System memory in use after: 126.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3176.
+Total: 3.910400 ms (FindLiveObjects: 0.497600 ms CreateObjectMapping: 0.266300 ms MarkObjects: 3.103100 ms  DeleteObjects: 0.041400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002020 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.306 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.4 MB.
+System memory in use after: 126.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3178.
+Total: 3.431600 ms (FindLiveObjects: 0.446900 ms CreateObjectMapping: 0.178100 ms MarkObjects: 2.783300 ms  DeleteObjects: 0.021300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001266 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.242 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.4 MB.
+System memory in use after: 126.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3180.
+Total: 3.555100 ms (FindLiveObjects: 0.380500 ms CreateObjectMapping: 0.185900 ms MarkObjects: 2.947300 ms  DeleteObjects: 0.039200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001243 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.161 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.4 MB.
+System memory in use after: 126.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3182.
+Total: 6.957500 ms (FindLiveObjects: 0.372400 ms CreateObjectMapping: 0.212800 ms MarkObjects: 6.335400 ms  DeleteObjects: 0.034600 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
